@@ -13,3 +13,5 @@ RUN wget https://github.com/Danko-Lab/dREG-Model/blob/master/asvm.mammal.RData\?
 
 RUN apt-get autoremove -y \
 && apt-get remove --purge -y git
+
+ENV PATH dREG/:$PATH

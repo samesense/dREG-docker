@@ -9,7 +9,7 @@ RUN git clone https://github.com/Danko-Lab/dREG \
 && make R_dependencies \
 && make dreg
 
-RUN wget https://github.com/Danko-Lab/dREG-Model/blob/master/asvm.mammal.RData\?raw\=true -O /lib/asvm.mammal.RDat
+RUN wget https://github.com/Danko-Lab/dREG-Model/blob/master/asvm.mammal.RData\?raw\=true -O /lib/asvm.mammal.RData
 
 RUN apt-get autoremove -y \
 && apt-get remove --purge -y git

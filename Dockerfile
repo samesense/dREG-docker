@@ -13,7 +13,7 @@ RUN wget https://github.com/Danko-Lab/dREG-Model/blob/master/asvm.mammal.RData\?
 
 RUN cd ..
 RUN git clone https://github.com/bedops/bedops.git
-RUN cd /bedops
+RUN cd bedops
 RUN make
 RUN make install
 RUN cp bin/* /usr/local/bin

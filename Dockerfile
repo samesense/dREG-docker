@@ -13,10 +13,7 @@ RUN wget https://github.com/Danko-Lab/dREG-Model/blob/master/asvm.mammal.RData\?
 
 RUN cd ..
 RUN git clone https://github.com/bedops/bedops.git
-RUN cd bedops
-RUN make
-RUN make install
-RUN cp bin/* /usr/local/bin
+RUN cd bedops && make && make install && cp bin/* /usr/local/bin
 
 RUN apt-get autoremove -y \
 && apt-get remove --purge -y git

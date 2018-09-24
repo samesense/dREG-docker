@@ -1,6 +1,8 @@
 FROM ubuntu:18.04
 MAINTAINER Perry Evans <https://github.com/samesense>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update -qqq \
 && apt-get install -y dialog apt-utils wget curl git r-base-core libssl1.0.0 libssl-dev libcurl4-openssl-dev pkg-config bzip2 tar build-essential libc6-dev
 

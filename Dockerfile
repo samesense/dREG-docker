@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER Perry Evans <https://github.com/samesense>
 
 RUN apt-get update -qqq \

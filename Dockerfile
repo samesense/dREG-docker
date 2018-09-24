@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER Perry Evans <https://github.com/samesense>
 
 RUN apt-get update -qqq \
-&& apt-get install -y wget curl git r-base-core libssl1.0.0 libssl-dev libcurl4-openssl-dev pkg-config bzip2 tar build-essential libc6-dev
+&& apt-get install -y dialog apt-utils wget curl git r-base-core libssl1.0.0 libssl-dev libcurl4-openssl-dev pkg-config bzip2 tar build-essential libc6-dev
 
 RUN git clone https://github.com/Danko-Lab/dREG \
 && cd dREG \
